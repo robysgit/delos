@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "b75a69ca-9de3-4017-8c65-297849fa998a",
+		"name": "Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "963631"
+	},
+	"item": [
+		{
+			"name": "delos",
+			"item": [
+				{
+					"name": "Get Farms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/farms",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"farms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/stats",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Farm",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "R",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/farm/3510b3f9-ee23-46ad-ac59-c8da87c493ca",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"farm",
+								"3510b3f9-ee23-46ad-ac59-c8da87c493ca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Farm",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/farm/653c1613-d3e6-4e6e-a001-7bc83e4a5443",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"farm",
+								"653c1613-d3e6-4e6e-a001-7bc83e4a5443"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Farm",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"653c1613-d3e6-4e6e-a001-7bc83e4a5443\",\r\n    \"farm_name\": \"updated\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/farm/653c1613-d3e6-4e6e-a001-7bc83e4a5443",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"farm",
+								"653c1613-d3e6-4e6e-a001-7bc83e4a5443"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ponds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ponds",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ponds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pond",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pond/a0dfa2b2-0630-414b-96f0-2ee6c19a0ff0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pond",
+								"a0dfa2b2-0630-414b-96f0-2ee6c19a0ff0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Ponds",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pond_name\":\"r\",\r\n    \"farm_id\":\"833b2b73-5a05-45b5-bd0b-c26778791f51\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/pond",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pond"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Farms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"farm_name\":\"rsa\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/farm",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"farm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
